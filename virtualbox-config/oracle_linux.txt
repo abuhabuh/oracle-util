@@ -1,0 +1,8 @@
+# 1. Install Oracle linux virtualbox image
+
+# 2. Install rlwrap for sqlplus command history and semi-emacs movement
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+sudo rpm -Uvh epel-release-latest-6.noarch.rpm
+sudo yum install rlwrap
+#    a. add shortcut for rlwrap around sqlplus
+echo "alias rs='rlwrap sqlplus'" >> ~/.bash_profile
